@@ -12,10 +12,10 @@ public void draw() {
 
 public void fractal(int x, int y, int size) {
 	quad(x+size, y, x, y+size, x-size, y, x, y-size);
-	if (size > 10) {
-		fractal(x-size/2, y, size/4);
-		fractal(x+size/2, y, size/4);
-		fractal(x, y+size/2, size/2);
-		fractal(x, y-size/2, size/2);
+	if (size > 4) {
+		fractal(x+40, y, size/2);
+		fractal(x-40, y, size/2);
+		fractal(x, y+40, size/2);
+		fractal(x, y-40, size/2);
 	}
 }
