@@ -17,5 +17,13 @@ public void fractal(int x, int y, int size) {
 		fractal(x-40, y, size/2);
 		fractal(x, y+40, size/2);
 		fractal(x, y-40, size/2);
+		fractal(x+20, y, size/4);
+		fractal(x-20, y, size/4);
+		fractal(x, y+20, size/4);
+		fractal(x, y-20, size/4);
+		fractal(x+50, y, size/8);
+		fractal(x-50, y, size/8);
+		fractal(x, y+50, size/8);
+		fractal(x, y-50, size/8);
 	}
 }
